@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^7.0.1",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.10",
+    "readline-sync": "^1.4.10"
+  },
+  "name": "slack-sections-organizer",
+  "description": "Organize your Slack sections to mirror your team's user groups and default channels.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/command-line-usage": "^5.0.2",
+    "@types/jest": "^29.5.1",
+    "@types/node-fetch": "^2.6.3",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vendrinc/slack-sections-organizer.git"
+  },
+  "author": "Ryan Gay",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/vendrinc/slack-sections-organizer/issues"
+  },
+  "homepage": "https://github.com/vendrinc/slack-sections-organizer#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/test/**/*.test.ts"
+    ]
+  }
+}
