@@ -230,7 +230,7 @@ export async function processUserGroup(
 }
 
 async function getChannelsForUserGroup(userGroup: any) {
-  const channels = []
+  const channels: any = []
   for (const channelId of userGroup.prefs.channels) {
     const channel = await getChannel(channelId)
     if (channel) {
@@ -296,7 +296,7 @@ export async function handleChannelsWithMultiSections(
     let sectionOption = -1
     do {
       sectionOption = parseInt(readlineSync.question(`\Please select which section to add this channel to: `))
-    } while (sectionOption < 0 || sectionOption >= channel.children.length)
+    } while (isNaN(sectionOption) || sectionOption < 0 || sectionOption >= channel.children.length)
     const selectedSection = channel.children[sectionOption]
 
     removeChannelInsert(inserts, selectedSection, channel)
