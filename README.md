@@ -9,7 +9,7 @@ Organize your Slack sections to mirror your team's user groups and default chann
 - Automatically delete empty sections after organization is complete.
 
 ## Installation
-- This app requires `node` and `npm` to run. Refer to the [Node Version Manager](https://github.com/nvm-sh/nvm#installing-and-updating) instructions for installation.
+- This app requires `node` and `npm` to run. Refer to the [Node Version Manager](https://github.com/nvm-sh/nvm#installing-and-updating) instructions for installation (recommended), or you may install them directly [here](https://nodejs.org/en/download).
 - Clone this repo (`git@github.com:vendrinc/slack-sections-organizer.git`) or if you do not have git installed [download the zip](https://github.com/vendrinc/slack-sections-organizer/archive/refs/heads/main.zip)
 - From the repo root directory, run `npm install && npm run build`
 
