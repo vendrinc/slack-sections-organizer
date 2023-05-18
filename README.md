@@ -26,6 +26,7 @@ Because this app uses non-published Slack APIs for managing sections, you must c
 1. Click the `Payload` tab and find `Form Data` -> `token`.
 1. Highlight and copy the `token` value (`xoxc-abc...123`) and paste it in `.env` as the `SLACK_XOXC_TOKEN` value.
 1. Save the `.env` file.
+#### WARNING: The `SLACK_COOKIE` and `SLACK_XOXC_TOKEN` secrets provide authenticated access to your Slack account. These values must be kept private. Do NOT share or distribute them.
 
 ## Usage
 - To run the app, from the repo root directory run `npm start -- <command line options>`
